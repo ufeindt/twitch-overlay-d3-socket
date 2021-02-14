@@ -9,15 +9,9 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/pages/controls.html");
 });
 
-app.get("/notifications/", (req, res) => {
-  res.sendFile(__dirname + "/pages/notifications.html");
+app.get("/overlay/", (req, res) => {
+  res.sendFile(__dirname + "/pages/overlay.html");
 });
-
-app.get("/frame/", (req, res) => {
-    res.sendFile(__dirname + "/pages/frame.html");
-  });
-  
-  
 
 io.on("connection", (socket) => {
   console.log("a user connected");
