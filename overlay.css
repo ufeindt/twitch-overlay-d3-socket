@@ -1,0 +1,12 @@
+.box-rotate {
+  -webkit-transform: rotate(-90deg); /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  transform: rotate(-90deg); /* Firefox 16+, IE 10+, Opera */
+}
+
+.label-social {
+    color: white;
+    font-size: 72px;
+    font-weight: bold;
+    font-family: Open Sans;
+}
