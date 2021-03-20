@@ -7,21 +7,21 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="overlay.css" />
+    <link rel="stylesheet" href="cam.css" />
   </head>
   <body>
     <div style="width: 1920px; height: 1080px" id="main">
       <svg width="1920" height="1080"></svg>
 
       <div
-        class="box-rotate label-social"
-        style="position: absolute; top: 710px; left: -100px"
+        class="label-social"
+        style="position: absolute; top: 970px; left: 320px"
       >
         <i class="fa fa-twitter"></i> <span>Werzaz</span>
       </div>
       <div
-        class="box-rotate label-social"
-        style="position: absolute; top: 650px; left: -70px"
+        class="label-social"
+        style="position: absolute; top: 970px; left: 1170px"
       >
         <i class="fa fa-twitch"></i> <span>CptWerzaz</span>
       </div>
@@ -29,15 +29,9 @@
 
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-      crossorigin="anonymous"
-    ></script>
-    <script src="overlay.js"></script>
-    <script src="settings.js"></script>
+    <script src="cam.js"></script>
     <script>
-      frame = new OverlayFrame({ streamlabsToken: settings.streamlabsToken });
+      frame = new CamFrame();
     </script>
   </body>
 </html>

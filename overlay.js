@@ -9,7 +9,7 @@ const defaults = {
   borderWidth: 9,
 };
 
-class Frame {
+class OverlayFrame {
   constructor(settings) {
     this.parseSettings(settings);
     this.svg = d3.select("svg");
